@@ -71,7 +71,7 @@ if uploadedFiles:
         st.subheader("Data Visualization")
 
         if st.checkbox(f"Show Visualization for {file.name}"):
-            st.area_chart(data_frame.select_dtypes(include="number").iloc[:,:2])
+            st.area_chart(data_frame.select_dtypes(include="number").iloc[:,:3])
 
 
         #file conversion CSV --> xlxs
